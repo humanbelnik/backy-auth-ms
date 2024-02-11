@@ -1,0 +1,18 @@
+# Configuration files for local developemnt
+env: "local"
+
+# PostgreSQL settings
+database:
+  name: auth-ms-db
+  host: host.docker.internal
+  port: 5432
+  user: admin
+  sslmode: disable
+  
+# How long does JWT token active since generation.
+token_ttl: 2h
+
+# gRPC server settings
+grpc:
+  port: 8080
+  timeout: 10h
